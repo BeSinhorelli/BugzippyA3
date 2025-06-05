@@ -1,0 +1,178 @@
+txt
+
+1; O que é uma variável?;1)Um botão secreto no teclado;2)Um lugar para guardar valores, como números e textos;3)Um tipo de erro;4)Uma função mágica;5)Um comando que fecha o programa;6)Um vírus de computador; 2
+
+1;Qual linha cria uma variável inteira com valor 12?;1) int idade = 12;2) idade = int 12;3) String idade = 12;4) double idade = idade;1
+
+1;Como somar os valores das variáveis 'a' e 'b' e guardar o resultado?;1) total = a mais b;2) String total = a + b;3) int total = a + b;4) char total = a + b; 3
+
+1;O tipo boolean guarda que tipo de informação?;1) Palavras longas;2) Verdadeiro ou falso;3) Fotos;4) Vídeos; 2
+
+1;Se eu tenho 10 balas e como 3, qual é a fórmula para saber quantas sobraram?;1) int sobrou = 10 + 3;2) int sobrou = 10 * 3;3) int sobrou = 10 - 3;4) int sobrou = 10 / 3;3
+
+1;Qual dessas é uma forma correta de criar uma variável?;1) 12 idade = int;2) var idade = 12;3) int idade = 12;4) idade = '12';3
+
+1;Como juntar os valores 5 e 3 para fazer uma subtração?;1) int resultado = 5 - 3;2) int resultado = 5 + 3;3) int resultado = 5 * 3;4) int resultado = 5 / 3;1
+
+1;Para que serve uma variável além de guardar valores?;1) Para guardar imagens;2) Para usar em contas e decisões;3) Para imprimir na tela com println;4) Para fazer desenhos;2
+
+1;O que significa a palavra int em Java?;1) Iniciar um programa;2) Mostrar uma mensagem;3) Guardar um número inteiro;4) Apagar um valor;3
+
+1;Qual nome é válido para uma variável?;1) meu nome;2) nome_do_usuario;3) nome@com;4) class;2
+
+--
+
+2;O que faz o if?;1) Ele conta piadas;2) Ele decide se algo deve acontecer;3) Ele pinta a tela;4) Ele cria um jogo;2
+
+2;Quando usamos o else?;1) Quando o if não acontece;2) Quando queremos repetir algo;3) Quando criamos uma variável;4) Quando desenhamos na tela;1
+
+2;if (sol == true) { irPraPraia(); } - O que esse código quer dizer?;1) Se estiver chovendo, ir pra praia;2) Sempre ir pra praia;3) Dormir na praia;4) Só ir pra praia se tiver sol;4
+
+2;O que significa o símbolo || ?;1) E;2) Ou;3) Não;4) Igual;2
+
+2;O que significa o símbolo && ?;1) Ou;2) Se não;3) E;4) Multiplica;3
+
+2;O que essa parte faz: if (idade >= 12)?;1) Vê se a idade é menor que 12;2) Vê se a idade é 12 ou mais;3) Multiplica a idade;4) Cria a idade;2
+
+2;O que faz o operador '!' ?;1) Soma números;2) Compara dois textos;3) Nega uma condição;4) Transforma número em texto;3
+
+2;Para que servem os operadores lógicos?;1) Ajudar o programa a tomar decisões;2) Repetir códigos em laços;3) Criar textos coloridos;4) Mudar a cor da tela;1
+
+2;Qual destas opções de operadores lógicos serve para 'Está chovendo e tem vento!';1) Chovendo && vento;2) Chovendo || vento;3) Chovendo + vento;4) Chovendo E vento;1
+
+2;Qual destas frases corresponde a frase: Hoje eu NÃO vou para a aula.;1) Hoje eu ! vou para a aula.;2) Hoje eu && vou para a aula.;3) Hoje eu || vou para a aula.;4) Hoje eu vou para a aula.;1
+
+--
+
+3;O que o comando switch faz?;1) Repete um bloco de código várias vezes;2) Compara uma variável com vários valores possíveis;3) Cria um novo método no programa;4) Serve para fazer contas de matemática;2
+
+3;Para que serve o comando break dentro de um switch?;1) Para fazer uma pausa no teclado;2) Para encerrar o programa inteiro;3) Para sair do switch depois que a opção correta foi encontrada;4) Para repetir o mesmo código várias vezes;3
+
+3;O que acontece se esquecermos o break dentro do switch?;1) Ele para automaticamente;2) Mostra um erro na tela;3) Executa os cases abaixo;4) Ignora o switch completamente;3
+
+3;Qual destas opções mostra a forma correta de escrever um switch básico?;1) switch x { case 1: break; };2) switch(x) { case 1: System.out.println("Um"); break; };3) switch(x) [ case 1; break; ];4) switch = x { 1 -> System.out.println("Um"); };2
+
+3;O que será impresso na tela? int dia = 2; switch (dia) { case 1:;System.out.println("Domingo"); break; case 2:;
+System.out.println("Segunda"); break; };1) Domingo;2) Segunda;3) Nada;4) Erro de compilação;2
+
+3;O que acontece com este código? int x = 3; switch(x) { case 1:;System.out.println("Um"); case 2: System.out.println("Dois"); case 3:;System.out.println("Três"); };1) Não imprime nada;2) Imprime “Três” apenas;3) Imprime “Três” e dá erro;4) Imprime “Três” e continua com os outros case;4
+
+3;Qual tipo de variável é mais usada no switch?;1) boolean;2) double;3) float;4) int;4
+
+3;Complete a frase: o switch é melhor usado quando...;1) Temos poucas opções de escolha;2) Queremos repetir várias vezes;3) Precisamos verificar muitos valores de uma variável;4) Queremos comparar dois valores apenas;3
+
+3;Qual dessas situações é uma boa ideia para usar switch em vez de if?;1) Quando queremos somar dois números;2) Quando temos várias opções fixas, como dias da semana;3) Quando temos que verificar se um número é par;4) Quando lemos um número aleatório;2
+
+3;Em qual dessas situações o uso do switch é mais indicado?;1) Para calcular a média de notas de um aluno;2) Para verificar se um número é maior que 100;3) Para escolher uma ação com base no botão pressionado (A, B, C...);4) Para contar até 10 com um loop;3
+
+--
+
+4;Para que serve o laço for em Java?;1) Criar uma nova janela;2) Repetir um bloco de código um número definido de vezes;3) Fazer cálculos com variáveis;4) Ler dados do usuário;2;
+
+4;Qual é a estrutura básica de um laço for em Java?;1) for (início; condição; atualização);2) for {início, condição, atualização};3) loop (início:condição:atualização);4) for-in (variável);1;
+
+4;O que será impresso por: for (int i = 1; i <= 3; i++;{ System.out.print(i + " "); };1) 0 1 2;2) 1 2 3;3) 1 2 3 4;4) Nada, dá erro;2;
+
+4;Em um for, qual parte verifica se o laço continua?;1) A parte da condição;2) O nome do laço;3) A variável i;4) A palavra for;1;
+
+4;Qual alternativa cria um laço que conta de 10 até 1?;1) for (int i = 1; i <= 10; i++);2) for (int i = 10; i >= 1; i--);3) for (int i = 10; i == 1; i--);4) for (int i = 10; i >= 1; i++);2;
+
+4;O que esse código faz? for (int i = 0; i < 5; i++); { System.out.println("Olá"); };1) Mostra “Olá” uma vez;2) Mostra “Olá” cinco vezes;3) Não mostra nada;4) Dá erro porque falta i++;2;
+
+4;O que acontece com for (int i = 1; i > 5; i++)?;1) Dá erro de compilação;2) Não imprime nada;3) Mostra infinitamente;4) Mostra apenas 5;2;
+
+4;Qual laço soma os números de 1 a 5?;1) for (int i = 5; i >= 1; i++);2) for (int i = 1; i <= 5; i++) soma += i;3) for (i = 1; i < 5; i--) soma += i;4) while (i < 5) soma += i;2;
+
+4;Para que serve o i++ no for?;1) Incrementar a variável a cada repetição;2) Encerrar o laço;3) Deixar o código mais bonito;4) Declarar uma nova função;1;
+
+4;Qual situação é ideal para usar o laço for?;1) Quando não sabemos quantas vezes vamos repetir;2) Quando temos que repetir algo para sempre;3) Quando queremos repetir algo um número exato de vezes;4) Quando queremos testar uma condição lógica;3;
+
+--
+
+5;Para que serve o laço while em Java?;1) Para repetir algo várias vezes;2) Para pintar a tela de azul;3) Para guardar números;4) Para desligar o computador;1;
+
+5;O que o while faz primeiro?;1) Mostra uma mensagem;2) Verifica se a condição é verdadeira;3) Pede um número;4) Cria um jogo;2;
+
+5;Quando o while para de repetir?;1) Quando o computador cansa;2) Quando o usuário aperta Enter;3) Quando a condição fica falsa;4) Nunca para;3;
+
+5;Qual a diferença do do-while?;1) Ele serve para decorar;2) Ele nunca repete;3) Ele só funciona com letras;4) Ele faz primeiro e pergunta depois;4;
+
+5;Quando é bom usar do-while?;1) Quando queremos que o código rode pelo menos uma vez;2) Quando queremos repetir só uma vez;3) Quando usamos a palavra mágica 'faça';4) Quando o código está com sono;1;
+
+5;O que esse código faz? while (i < 3) { System.out.println("Oi"); i++; };1) Escreve "Oi" mil vezes;2) Escreve "Oi" três vezes;3) Não escreve nada;4) Mostra um erro;2;
+
+5;Qual dessas é uma forma certa de usar do-while?;1) while { jogar(); };2) faça { jogar(); } até parar;3) do { System.out.println("Vamos jogar!"); } while (jogar ==true);4) repetir { jogar(); } se quiser;3;
+
+5;O que acontece se a condição do while for falsa logo no começo?;1) Fica preso em um loop;2) Roda uma vez só;3) Mostra "erro!";4) O código não roda;4;
+
+5;O que o do-while faz se a condição for falsa no final?;1) Roda uma vez e para;2) Não roda nada;3) Roda mil vezes;4) Muda o valor sozinho;1;
+
+5;O que é importante lembrar sobre while e do-while?;1) do-while é mais rápido;2) while pergunta antes, do-while roda antes;3) while é só para números;4) Eles funcionam com mágica;2;
+
+--
+
+6;Qual opção cria um ônibus com 4 assentos (um array de 4 inteiros)?;1) int idades = new int[4];2) int[4] idades = new int;3) int[] idades = new int[4];4) array int idades = 4;3;
+
+6;Verdadeiro ou Falso: o primeiro assento (índice) de um array em Java é 1.;1) Verdadeiro;2) Falso;3) Somente em arrays de texto;4) Somente em arrays de números;2;
+
+6;Complete o código para colocar a idade 30 no segundo assento do ;array idades. int[];
+idades = new int[3]; ___________________________;1) idades(1) = 30;2) idades[2] = 30;3) idades[1] = 30;4) idades = 30[1];3;
+
+6;O que será exibido? int[] numeros = { 5, 8, 3 };System.out.println(numeros[0] );1) 0;2) 3;3) 8;4) 5;4;
+
+6;Qual linha imprime quantos assentos existem no arraynomes?;String[] nomes = new;String[10];1) System.out.println( nomes.size );2) System.out.println( nomes.length );3) System.out.println( length(nomes) );4) System.out.println( nomes.length() );2;
+
+6;Qual alternativa cria e preenche um array com os números 2, 4 e 6?;1) int[] pares = new int{2,4,6};2) array pares = {2,4,6};3) int pares = {2;4;6};4) int pares[] = { 2, 4, 6 };4;
+
+6;Verdadeiro ou Falso: em um array de int, se você não preencher um assento, ele vale 0.;1) Verdadeiro;2) Falso;3) Vale -1;4) Vale null;1;
+
+6;Qual das alternativas abaixo representa corretamente um Array que pode guardar 10 nomes de pessoas?;1) String nomes[10];2) String[] nomes = new String[10];3) int[] nomes = new String[10];4) String nomes = new String[10];2;
+
+6;Qual palavra em Java usamos para criar um novo Array?;1) create;2) make;3) new;4) build;3;
+
+6;Complete o código para colocar o número 30 no assento 2 do Array numeros: int[];numeros = new int[5]; ___________ = 30;1) numeros[3];2) numeros[2];3) numeros(2);4) numeros.set(2);2;
+
+--
+
+7;Qual dessas opções cria um ônibus com 3 fileiras e 2 assentos por fileira?;1) int[][] lugares = new int[3][2];2) int lugares[3][2];3) int lugares = new int(3,2);4) int lugares[] = new int[3][2];1;
+
+7;Em lugares[1][0], o que significa o número 1?;1) Número do assento;2) Número da janela;3) Número da fileira;4) Número do passageiro;3;
+
+7;Qual linha coloca o número 5 na segunda fileira, terceiro assento de uma matriz numeros?;1) numeros[1][2] = 5;2) numeros[2][3] = 5;3) numeros[2][1] = 5;4) numeros[3][2] = 5;1;
+
+7;O que essa linha imprime?;
+int[][] tabela = {;{1, 2},;{3, 4};};System.out.println(tabela[0][1]);1) 0;2) 1;3) 2;4) 3;3;
+
+7;O que for (int i = 0; i < matriz.length; i++) percorre?;1) Os assentos de cada fileira;2) Todas as colunas;3) As fileiras da matriz;4) Os valores da matriz;3;
+
+7;Qual opção cria e preenche uma matriz com os valores abaixo? 1 2 3 4;1) int[][] m = { 1, 2, 3, 4 };2) int[][] m = new int[2][2]{1,2,3,4};3) int[][] m = {{1, 2}, {3, 4}};4) int[][] m = { {1 2}, {3 4} };3;
+
+7;Em lugares[0][1], o que o número 0 representa?;1) A quantidade total de assentos;2) O número do ônibus;3) Um número aleatório;4) A fileira;4;
+
+7;Qual dessas opções guarda o número 7 na primeira fileira e segundo assento?;1) matriz[0][1] = 7;2) matriz[1][0] = 7;3) matriz[7] = 0.1;4) matriz[1][7] = 0;4;
+
+7;Quantos elementos cabem em uma matriz int[][] m = new int[2][2];?;1) 2;2) 4;3) 6;4) 8;2;
+
+7;O que essa linha faz? System.out.println(matriz[1][0]);1) Coloca um valor na matriz;2) Soma os valores da matriz;3) Cria uma nova matriz;4) Imprime o valor da segunda fileira, primeiro assento;4;
+
+--
+
+8;Para que serve a classe ArrayList em Java?;1) Criar gráficos;2) Armazenar muitos elementos que podem crescer automaticamente;3) Criar botões na tela;4) Repetir ações com for;2;
+
+8;Como se cria um ArrayList de Strings?;1) ArrayList&lt;String> nomes = new ArrayList&lt;>();2) ArrayList nomes = "String";3) String[] nomes = ArrayList();4) ArrayList&lt;nome> = new String();1;
+
+8;Qual método adiciona um item a um ArrayList?;1) addItem();2) append();3) push();4) add();4;
+
+8;Qual comando remove um elemento do ArrayList?;1) remove(index);2) delete();3) pop();4) erase();1;
+
+8;O que faz o método size()?;1) Mostra o conteúdo do ArrayList;2) Conta quantos itens há no ArrayList;3) Apaga o ArrayList;4) Adiciona um novo item;2;
+
+8;Como acessar o primeiro item de um ArrayList chamado nomes?;1) nomes[1];2) nomes(0);3) nomes.first();4) nomes.get(0);4;
+
+8;O que acontece se tentar acessar um índice que não existe?;1) O Java cria esse índice;2) Ele ignora e continua;3) Ele imprime 'null';4) Dá erro em tempo de execução;4;
+
+8;Como limpar todos os itens de um ArrayList?;1) nomes.empty();2) nomes.removeAll();3) nomes.clear();4) nomes.deleteAll();3;
+
+8;Qual método substitui um valor em um ArrayList?;1) update();2) change();3) modify();4) set(index, valor);4;
+
+8;Como verificamos se um item está no ArrayList?;1) nomes.has("João");2) nomes.exists("João");3) nomes.contains("João");4) nomes.find("João");3;
