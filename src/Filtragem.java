@@ -1,14 +1,22 @@
+import java.util.ArrayList;
+import java.util.*;
+
 public class Filtragem {
-    public static ArrayList<Pergunta> sortearPerguntasPorNivel(ArrayList<Pergunta> todas, int nivel) {
-        ArrayList<Pergunta> filtradas = new ArrayList<>();
-        for (Pergunta p : todas) {
+    public static ArrayList<Perguntas> sortearPerguntasPorNivel(ArrayList<Perguntas> todas, int nivel) {
+        ArrayList<Perguntas> filtradas = new ArrayList<>();
+        for (Perguntas p : todas) {
             if (p.getNivel() == nivel) {
                 filtradas.add(p);
             }
         }
-
+        ArrayList<Perguntas> tresperg =  new ArrayList<>();
         Collections.shuffle(filtradas);
-        return filtradas.subList(0, Math.min(3, filtradas.size()));
+        for(int i =0; i < filtradas.size(); i++){
+            if(i< 3){
+                tresperg.add(filtradas.get(i));
+            }
+        }
+        return tresperg;
     }
 
 }
