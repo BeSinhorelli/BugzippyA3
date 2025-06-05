@@ -3,6 +3,6 @@
 public class Main {
     public static void main(String[] args) {
         Nivel1 n1 = new Nivel1();
-        n1.chamaNivel1();
+        n1.perguntasNivel1();
     }
 }
