@@ -1,20 +1,44 @@
-import java.util.ArrayList;
+import javax.swing.*;
+import java.io.*;
 
 public class Nivel1 {
-    public Nivel1(){}
-        public void chamaNivel1(){
-            ArrayList<Perguntas> perguntas = Arquivo.carregarPerguntas("C:\\Users\\1292510067\\IdeaProjects\\BugzippyA3\\src\\perguntas.txt");
 
-            ArrayList<Perguntas> perguntasNivel1 = Filtragem.sortearPerguntasPorNivel(perguntas, 1);
+    public static void chamaNivel1() {
+        String d = "";
+        try {
+            String msg = "perguntas";
+            JFileChooser fileChooser = new JFileChooser();
+            fileChooser.setDialogTitle("Escolha o diretório para salvar o arquivo");
+            fileChooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
 
-            for (Perguntas p : perguntasNivel1) {
-                System.out.println(p.getEnunciado());
-                System.out.println(p.getAlternativa1());
-                System.out.println(p.getAlternativa2());
-                System.out.println(p.getAlternativa3());
-                System.out.println(p.getAlternativa4());
-                System.out.println();
+            int userSelection = fileChooser.showSaveDialog(null);
+            if (userSelection == JFileChooser.APPROVE_OPTION) {
+                File selectedDir = fileChooser.getSelectedFile();
+                d = selectedDir.getAbsolutePath();
+            } else {
+                JOptionPane.showMessageDialog(null, "Operação cancelada pelo usuário.");
+                return;
             }
 
+            if (!d.endsWith(File.separator)) {
+                d += File.separator;
+            }
+
+            msg += ".txt"; // ou ".dat", se preferir
+            File arquivo = new File(d + msg);
+
+            try (BufferedWriter bw = new BufferedWriter(new FileWriter(arquivo))) {
+                // Aqui você escreve o conteúdo desejado
+                bw.write("Exemplo de conteúdo salvo no arquivo.");
+                bw.newLine();
+                bw.write("Linha 2 de exemplo.");
+                JOptionPane.showMessageDialog(null, "Arquivo salvo com sucesso em:\n" + arquivo.getAbsolutePath());
+            } catch (IOException e) {
+                JOptionPane.showMessageDialog(null, "Erro ao salvar arquivo: " + e.getMessage());
+            }
+
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "Erro geral: " + e.getMessage());
         }
+    }
 }
