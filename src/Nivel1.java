@@ -24,11 +24,10 @@ public class Nivel1 {
                 d += File.separator;
             }
 
-            msg += ".txt"; // ou ".dat", se preferir
+            msg += ".txt";
             File arquivo = new File(d + msg);
 
             try (BufferedWriter bw = new BufferedWriter(new FileWriter(arquivo))) {
-                // Aqui você escreve o conteúdo desejado
                 bw.write("Exemplo de conteúdo salvo no arquivo.");
                 bw.newLine();
                 bw.write("Linha 2 de exemplo.");
