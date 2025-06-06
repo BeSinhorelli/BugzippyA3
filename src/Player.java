@@ -1,15 +1,21 @@
 public class Player {
-    private String nome, ranking;
+    private String nome, ranking, acesso, email;
 
-    public Player(String nome, String ranking) {
+    public Player(String nome, String ranking, String acesso, String email) {
         this.nome = nome;
         this.ranking = ranking;
-    }
-    public Player(String nome) {
-        this.nome = nome;
+        this.acesso = acesso;
+        this.email = email;
     }
 
-    public Player() {
+    public Player(String nome, String acesso, String email) {
+        this.nome = nome;
+        this.acesso = acesso;
+        this.email = email;
+    }
+    public Player(String nome, String email) {
+        this.nome = nome;
+        this.email = email;
     }
 
     public String getNome() {
@@ -28,4 +34,19 @@ public class Player {
         this.ranking = ranking;
     }
 
+    public String getAcesso() {
+        return acesso;
+    }
+
+    public void setAcesso(String acesso) {
+        this.acesso = acesso;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
 }

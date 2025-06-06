@@ -50,12 +50,15 @@ public class ArquivoPlayer {
         System.out.print("Digite o nome do player: ");
         String nome = sc.nextLine();
         //ranking será preenchido automaticamente
-
-        Player p = new Player(nome /*ranking*/);
+        System.out.print("digite o seu acesso");
+        String acesso = sc.nextLine();
+        System.out.print("digite o seu email");
+        String email = sc.nextLine();
+        Player p = new Player(nome /*ranking*/, acesso, email);
 
         // Grava no arquivo
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(arq, true))) {
-            bw.write(p.getNome() + " | "/*p.getRanking()*/);
+            bw.write(p.getNome() + " | "/*p.getRanking()*/ + p.getAcesso());
             bw.newLine();
             System.out.println("Player cadastrado com sucesso em: " + arq.getAbsolutePath());
         } catch (IOException e) {
@@ -67,9 +70,10 @@ public class ArquivoPlayer {
     public void editaPlayer() {
         System.out.print("Digite o nome do player a editar: ");
         String nomeEditado = sc.nextLine();
-        List<String> linhas = new ArrayList<>();
+        System.out.print("digite o seu email");
+        String email = sc.nextLine();
+        ArrayList<String> linhas = new ArrayList<>();
         boolean encontrado = false;
-
         try (BufferedReader br = new BufferedReader(new FileReader(arquivo))) {
             String linha;
 
@@ -78,9 +82,9 @@ public class ArquivoPlayer {
                 if (dados.length > 0 && dados[0].equalsIgnoreCase(nomeEditado)) {
                     System.out.print("Novo nome: ");
                     String novoNome = sc.nextLine();
-                    System.out.print("Novo ranking: ");
-                    String novoRanking = sc.nextLine();
-                    linhas.add(novoNome + ";" + novoRanking);
+                    System.out.print("Novo email: ");
+                    String novoEmail = sc.nextLine();
+                    linhas.add(novoNome + ";" + novoEmail);
                     encontrado = true;
                 } else {
                     linhas.add(linha);
@@ -107,18 +111,43 @@ public class ArquivoPlayer {
     }
 
     // Visualizar todos os players
-    public void verPlayers() {
+    // Método para carregar players do arquivo para um ArrayList<Player>
+    public ArrayList<Player> carregarPlayers() {
+        ArrayList<Player> players = new ArrayList<>();
+
         try (BufferedReader br = new BufferedReader(new FileReader(arquivo))) {
             String linha;
-            System.out.println("\n==== Lista de Players ====");
             while ((linha = br.readLine()) != null) {
                 String[] dados = linha.split(";");
-                if (dados.length == 2) {
-                    System.out.println("Nome: " + dados[0] + " | Ranking: " + dados[1]);
+                if (dados.length >= 2) {
+                    String nome = dados[0];
+                    String email = dados[1];
+                    String ranking = (dados.length >= 3) ? dados[2] : "Sem ranking";
+
+                    players.add(new Player(nome, email, ranking));
                 }
             }
         } catch (IOException e) {
             System.out.println("Erro ao ler o arquivo: " + e.getMessage());
         }
+
+        return players;
     }
+
+    // Método para exibir a lista de players do ArrayList
+    public void verPlayers() {
+        ArrayList<Player> players = carregarPlayers();
+
+        if (players.isEmpty()) {
+            System.out.println("Nenhum player cadastrado.");
+            return;
+        }
+
+        System.out.println("\n==== Lista de Players ====");
+        for (Player p : players) {
+            System.out.println("Nome: " + p.getNome() + " | Email: " + p.getEmail() + " | Ranking: " + p.getRanking());
+        }
+    }
+
+
 }
