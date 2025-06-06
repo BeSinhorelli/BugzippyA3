@@ -10,7 +10,8 @@ public class Arquivo {
                     String[] partes = linha.split(";");
                     if (partes.length == 7) {
                         int nivel = Integer.parseInt(partes[0]);
-                        Perguntas p = new Perguntas(nivel, partes[1], partes[2], partes[3], partes[4], partes[5], partes[6]);
+                        int respostaCorreta = Integer.parseInt(partes[6]);
+                        Perguntas p = new Perguntas(nivel, partes[1], partes[2], partes[3], partes[4], partes[5], respostaCorreta);
                         perguntas.add(p);
                     }
                 }

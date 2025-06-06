@@ -5,10 +5,10 @@ public class Perguntas {
     private String alternativa2;
     private String alternativa3;
     private String alternativa4;
-    private String respostaCorreta;
+    private int respostaCorreta;
 
     public Perguntas(int nivel, String enunciado, String a1, String a2, String a3,
-                     String a4, String correta){
+                     String a4, int correta){
         this.nivel = nivel;
         this.enunciado = enunciado;
         this.alternativa1 = a1;
@@ -23,6 +23,6 @@ public class Perguntas {
     public String getAlternativa2() { return alternativa2; }
     public String getAlternativa3() { return alternativa3; }
     public String getAlternativa4() { return alternativa4; }
-    public String getRespostaCorreta() { return respostaCorreta; }
+    public int getRespostaCorreta() { return respostaCorreta; }
 
 }

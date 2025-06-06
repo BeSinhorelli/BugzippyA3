@@ -1,0 +1,48 @@
+1;-------------------------------------------------------------------------------------------------------------------------------------------------------------                                                                     NÍVEL 01
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+>> O que é Programação?
+[Capítulo 1 – Página 25]
+Programação é quando damos instruções bem certinhas para o computador seguir. Essas instruções dizem exatamente o que ele deve fazer: mostrar uma mensagem, somar números, tocar um som ou até criar um jogo!
+Quem escreve essas instruções é chamado de programador.                        Com a programação, ensinamos o computador a pensar do nosso jeito!
+-------------------------------------------------------------
+>> O que é Java?
+[Capítulo 1 – Página 27]
+Java é uma linguagem de programação, ou seja, uma forma de conversar com o computador. Ela é usada no mundo todo porque funciona em vários tipos de computadores. Frase famosa: "Escreva uma vez e execute em qualquer lugar"
+Isso quer dizer que um programa em Java pode rodar em muitos lugares sem mudar nada.
+-------------------------------------------------------------
+>> O que são Variáveis?                        [Capítulo 2 – Página 37]
+Variáveis são como caixinhas que guardam informações.
+Por exemplo, podemos ter uma variável chamada idade que guarda o número 12, ou uma chamada nome que guarda o texto "Maria".
+Exemplo:
+int idade = 12;
+String nome = "Maria";                     
+-------------------------------------------------------------
+>> Tipos de variáveis
+[Capítulo 2 – Página 37-38]
+int     - guarda números inteiros (ex: 5, 10, 99)
+double  - guarda números com vírgula (ex: 3.14, 8.5)
+char    - guarda um caractere, como 'A' ou '7'
+boolean - guarda true ou false (verdadeiro ou falso) String  - guarda palavras ou frases como Olá
+float   - também guarda números com vírgula (menos preciso que double)
+-------------------------------------------------------------
+>> Regras de Nomes para Variáveis
+[Capítulo 2 – Página 36]
+1. Deve começar com letra (ex: idade, nomeAluno)
+2. Pode usar números, mas não no começo (ex: nota1, não 1nota)
+3. Pode usar _ (underline) ou $ (mas evite se puder)
+4. Não pode ter espaços (ex: nome do aluno <-ERRADO, nomeDoAluno <-CERTO)
+5. Não pode usar símbolos especiais como @, #, %, etc.
+6. Não pode usar palavras reservadas do Java (como int, for, class, etc.)\n\n" +
+-------------------------------------------------------------
+>> O que são Fórmulas?
+[Capítulo 2 – Página 41-42]
+Fórmulas são operações que usamos para calcular algum valor usando variáveis.
+É como fazer contas com números que estão guardados nas caixinhas (variáveis).
+Operador     O que faz\\t           Exemplo (a = 6, b = 3)
++              Soma                       a + b = 9
+-              Subtração                  a - b = 3
+*              Multiplicação              a * b = 18
+/              Divisão                    a / b = 2
+%              Resto da divisão           a % b = 0
+
+clique ENTER se você entendeu
